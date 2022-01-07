@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  tasks:
+    - name: run redmine
+      command: docker run -p 80:3000  -d --name some-redmine redmine
+    
